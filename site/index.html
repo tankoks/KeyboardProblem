@@ -7,31 +7,50 @@
     <meta charset=utf-8 />
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
     <title>KeyboardProblem</title>
-    <script src="cytoscape.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.easy-autocomplete.js"></script>
+    <script src="js/cytoscape.js"></script>
+
+
   </head>
   <body>
-
-    <div id="submit">
-        <form id="submitNewTrade">
+    <div id="submitNewTradeFormDiv">
+        <form id="submitNewTradeForm">
+            Username:
+            <br>
             <input type="text" id="username" placeholder="Username">
+            <br>
+            Have:
             <input type="text" id="source" placeholder="What you have">
+            Want:
             <input type="text" id="destination" placeholder="What you want">
-            <input type="button" id="submit" onClick="submitNewTrade()" value="Submit">
+            <br>
+            <input type="button" id="submitNewTrade" value="Submit">
+            <script>
+            var options = {
+                url: "http://localhost:3000/nodes",
+                getValue: "name",
+
+                list: {
+                    match: {
+                        enabled: true
+                    }
+                },
+            };
+            theme: "square"
+            $("#source").easyAutocomplete(options);
+            $("#destination").easyAutocomplete(options);
+            </script>
         </form>
     </div>
 </br>
 </br>
 </br>
-    <div id="search">
-        <form id="findTrade">
-            <input type="text" id="havesearch" placeholder="Have">
-            <input type="text" id="wantsearch" placeholder="Want">
-            <input type="button" id="submit" onClick="findTrade()" value="Submit">
-        </form>
-    </div>
+
 
     <div id="cy"></div>
     <!-- Load appplication code at the end to ensure DOM is loaded -->
-    <script src="code.js"></script>
+    <script src="js/code.js"></script>
   </body>
 </html>

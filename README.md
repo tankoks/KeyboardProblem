@@ -5,3 +5,5 @@ A path will try to be found linking the items through the paths already in the g
 Users can then contact each other to try to get the items they all desire.
 
 Uses: Cytoscape.js
+JSON-server
+easyautocomplete

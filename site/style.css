@@ -3,22 +3,20 @@ body {
 }
 
 #cy {
-  height: 80%;
-  width: 100%;
+  height: 100%;
+  width: 80%;
   position: fixed;
+  margin-left: 20%;
   left: 0;
   bottom: 0;
 }
 
-#submit {
-    margin: auto;
-    text-align: center;
+#submitNewTradeFormDiv {
+    margin-left: 0;
+    width: 20%;
+    text-align: left;
 }
 
-#search {
-    margin: auto;
-    text-align: center;
-}
 
 
 #info {
