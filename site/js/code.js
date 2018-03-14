@@ -81,7 +81,6 @@ $(function() {
   //   }
   // });
 
-
 //initilization
   function addData() {
       cy.startBatch();
@@ -172,8 +171,7 @@ $(function() {
       console.log(tradeExist.path);
     }
   }
-
-
+  
 //helperfunction
   function findTrade(source, destination) {
     var sourceNode = document.getElementById("source").value;
@@ -181,7 +179,4 @@ $(function() {
     var aStar = cy.elements().aStar({root: '#'+destinationNode, goal: '#'+sourceNode, directed: true});
     return aStar;
   }
-
-
-
 });
