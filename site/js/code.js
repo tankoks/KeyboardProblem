@@ -14,8 +14,6 @@ $(function() {
     dataType: 'json'
   });
 
-
-
   Promise.all([nodes, edges]).then(initCy);
 
   function initCy( then ){
