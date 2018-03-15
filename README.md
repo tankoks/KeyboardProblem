@@ -15,7 +15,5 @@ Users can then contact each other to try to get the items they all desire.
 * **Kok Seng Tan** - *Initial work* - [tankoks](https://github.com/tankoks)
 * **Richard Red** - *Literally everything else* - [richardred](https://github.com/richardred)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## License
 This project is licensed under the MIT License - see the [License](LICENSE) file for details
