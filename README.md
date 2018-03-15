@@ -1,6 +1,8 @@
 # KeyboardProblem
 This is a website that facilitates multiway trading, particularly for artisan keycaps.
+
 Users can enter the items that they have and the items that they want, and a path linking the items through the existing paths will be found/created.
+
 Users can then contact each other to try to get the items they all desire.
 
 ## Built With
